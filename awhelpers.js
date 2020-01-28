@@ -1,4 +1,5 @@
 /***
+mw.require("<?= template_url(); ?>/assets/js/awhelpers.js"); //require do arquivo
 <script>
     aw.addNewIcon(
         "Random Name", //nome
