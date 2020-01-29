@@ -40,5 +40,5 @@ $(window).on('load', function () {
 ```
 
 # Custom Code
-Just copy the project, download node dependencies, make your custom code in `src/js/awhelpers.js` and run `npm run build` them copy in the dist 
-folder the js you want in your [Microweber](https://github.com/microweber/microweber) project.
+Just copy the project, download node dependencies, make your custom code in `src/js/awhelpers.js` and run `npm run build` them copy from the dist 
+folder the js you want for your [Microweber](https://github.com/microweber/microweber) project.
