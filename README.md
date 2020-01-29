@@ -1,11 +1,13 @@
-#Usage
+# Usage
 
 First at all, you need to require the file using
-`mw.require("<?= template_url(); ?>/assets/js/awhelpers.js"); //require the file`
+`mw.require("<?= template_url(); ?>/assets/js/awhelpers.js");` or 
+`mw.require(mw.settings.template_url + "/assets/js/awhelpers.js");`
 
-##Add Icon:
+## Add Icon:
 ```js
 <script>
+$(window).on('load', function () {
     aw.addNewIcon(
         "Random Name", //icon name
         "assets/icons_test/icons_a/flaticon.css", //path to the css file
@@ -16,12 +18,14 @@ First at all, you need to require the file using
         ['flaticon-'], //classes prefix to remove the icons class (prefix)
         ['flaticon'] //classes to remove in the icon class (normally is the same as added before)
     );
+});
 </script>
 ```
 
-##Add Font:
+## Add Font:
 ```js
 <script>
+$(window).on('load', function () {
     aw.addNewFont(
         [
             "Acumin Pro",
@@ -31,9 +35,10 @@ First at all, you need to require the file using
         ], //all font families
         "assets/custom_fonts/acumin/style.css" //path to the css
     );
+});
 </script>
 ```
 
-#Custom Code
+# Custom Code
 Just copy the project, download node dependencies, make your custom code in `src/js/awhelpers.js` and run `npm run build` them copy in the dist 
 folder the js you want in your [Microweber](https://github.com/microweber/microweber) project.
