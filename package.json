@@ -1,0 +1,34 @@
+{
+  "name": "aw-microweber-helper",
+  "version": "1.0.0",
+  "description": "Microweber Helper",
+  "scripts": {
+    "build": "mkdir -p dist/js && uglifyjs src/js/*.js -b -o dist/js/awhelpers.js && uglifyjs src/js/*.js -m -c -o dist/js/awhelpers.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appworldbr/aw-microweber-helper.git"
+  },
+  "keywords": [
+    "app",
+    "world",
+    "microweber",
+    "helper",
+    "aw",
+    "mw",
+    "awhelper",
+    "awhelpers",
+    "mwhelper",
+    "mehelpers"
+  ],
+  "author": "Marcelo Araujo Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appworldbr/aw-microweber-helper/issues"
+  },
+  "homepage": "https://github.com/appworldbr/aw-microweber-helper#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "uglify-js": "^3.7.6"
+  }
+}

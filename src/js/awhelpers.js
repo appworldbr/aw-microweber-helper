@@ -1,6 +1,6 @@
 /***
-mw.require("<?= template_url(); ?>/assets/js/awhelpers.js"); //require do arquivo
 <script>
+    mw.require("<?= template_url(); ?>/assets/js/awhelpers.js"); //require do arquivo
     aw.addNewIcon(
         "Random Name", //nome
         "assets/icons_test/icons_a/flaticon.css", //caminho até o css dos ícones
